@@ -1,0 +1,24 @@
+{
+  "name": "portalcertificaciones",
+  "version": "1.0.0",
+  "description": "Proyecto de Capstone para crear un portal de certificaciones para la universidad que se conecte a Intranet.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaxterTimeless/PortalCertificaciones.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaxterTimeless/PortalCertificaciones/issues"
+  },
+  "homepage": "https://github.com/MaxterTimeless/PortalCertificaciones#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "pg": "^8.7.3"
+  }
+}

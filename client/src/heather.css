@@ -8,6 +8,29 @@ body {
     -moz-osx-font-smoothing: grayscale;
   }
 
+  .btn-link:hover {
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+  }
+
+  .btn-link:active {
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+  }
+
+  .btn-link:visited {
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+  }
+
+
+  .btn-link {
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 1px 0px;
+    
+  }
+
   .top-bar a:hover {
     color:rgb(255, 255, 255);
   }
@@ -15,6 +38,10 @@ body {
     background-color: rgb(0, 0, 0);
     padding: 20px 0px 20px 0px;
     width: 100%;
+  }
+
+  .dropdown-content-1 a:hover{ 
+  color:rgb(0, 0, 0)
   }
   
   .Titulo{

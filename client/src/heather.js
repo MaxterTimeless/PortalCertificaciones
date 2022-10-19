@@ -1,7 +1,13 @@
-import React, { Fragment } from "react"
+import React, { Fragment,useState} from "react"
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+import Modal from 'react-bootstrap/Modal';
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 import './Heather.css';
 
-function heather() {
+
+function Heather() {
   const Menu = (dis) => {
       if(document.getElementById(dis).style.display == "block"){
         document.getElementById(dis).style.display = "none";
@@ -9,7 +15,12 @@ function heather() {
         document.getElementById(dis).style.display = "block";
       }
   };
+  const [show, setShow] = useState(false);
   
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+  const [startDate, setStartDate] = useState(new Date());
+  const [startDate2, setStartDate2] = useState(new Date());
   return (
     <Fragment>
       <div class="top-bar">
@@ -32,7 +43,71 @@ function heather() {
             <div class="dropdown-content-1">
               <a href="#">Cursos disponibles</a>
               <a href="#">Mis certificados</a>
-              <a href="#">Ingresar certificado</a>
+              <a href="#">
+              <>
+              <div className="link">
+        <Button variant="link" class="btn btn-link" onClick={handleShow} size="lg">
+          Ingresar nuevo certificado
+        </Button>
+        </div>
+        <Modal show={show} onHide={handleClose} backdrop="static">
+          <Modal.Header closeButton>
+            <Modal.Title>Nuevo certificado</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <Form>
+              <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                <Form.Label>Título</Form.Label>
+                <Form.Control
+                  type="text"
+                  placeholder="Título"
+                  autoFocus
+                />
+              </Form.Group>
+              <Form.Group className="mb-3" controlId="exampleForm.ControlInput2">
+                <Form.Label>Empresa Certificadora</Form.Label>
+                <Form.Control
+                  type="text"
+                  placeholder="Empresa"
+                  autoFocus
+                />
+              </Form.Group>
+              <Form.Group className="mb-3" controlId="exampleForm.ControlInput3">
+                <Form.Label> Tipo</Form.Label>
+                <Form.Control
+                  type="text"
+                  placeholder="Tipo"
+                  autoFocus
+                />
+              </Form.Group>
+              <Form.Group className="mb-3" controlId="exampleForm.ControlInput4">
+                <Form.Label>Link</Form.Label>
+                <Form.Control
+                  type="text"
+                  placeholder="Link"
+                  autoFocus
+                />
+              </Form.Group>
+
+              <Form.Label>Fecha Obtención</Form.Label>
+              <DatePicker selected={startDate} onChange={(date:Date) => setStartDate(date)} />
+              
+              <Form.Label>Vigencia</Form.Label>
+              <DatePicker selected={startDate2} onChange={(date:Date) => setStartDate2(date)} />
+
+            </Form>
+          </Modal.Body>
+          <Modal.Footer>
+            <Button type="submit" variant="secondary" onClick={handleClose}>
+              Close
+            </Button>
+            <Button variant="primary" onClick={handleClose}>
+              Enviar
+            </Button>
+          </Modal.Footer>
+        </Modal>
+      </>
+              </a>
 
             </div> 
             <div class="dropdown-content-2">
@@ -56,4 +131,4 @@ function heather() {
   );
 }
 
-export default heather;
+export default Heather;

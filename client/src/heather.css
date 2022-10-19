@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+    color:white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .menu-bar{
+    background-color: rgb(0, 0, 0);
+    padding: 20px 0px 20px 0px;
+    width: 100%;
+  }
+  
+  .Titulo{
+    font-size: 45px;
+    left: 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    position: relative;
+  }
+  
+  .navicon_js-navicon{
+    background-color: transparent;
+    left: 40px;
+    fill: #00adda;
+    border-style: none;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: relative;
+    background-color: #ffffff;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    overflow:auto;
+    overflow-x: hidden;
+  }
+  
+  .dropdown-content-1 a {
+    color: #1d1e20;
+    margin-right: 0;
+    padding: 20px 0px 20px 10px;
+    text-decoration: none;
+    display: block;
+    font-family: "Bitter", serif;
+    border-bottom: 1px solid #d7d2cb;
+    font-weight: 700;
+    line-height: 1.25rem;
+    font-size: 1.125rem;
+  }
+  
+  .dropdown-content-2 a {
+    color: white;
+    background-color: #2d2d2d;
+    padding: 20px 10px;
+    text-decoration: none;
+    display: block;
+    font-family: "Bitter", serif;
+    border-bottom: 1px solid #d7d2cb;
+    font-weight: 700;
+    line-height: 1.25rem;
+    font-size: 1.125rem;
+  }
+  
+  .Centros {
+    color: white;
+    background-color: #2d2d2d;
+    padding: 20px 10px;
+    text-decoration: none;
+    display: block;
+    font-family: "Bitter", serif;
+    border-bottom: 1px solid #d7d2cb;
+    font-weight: 700;
+    line-height: 1.25rem;
+    font-size: 1.125rem;
+  }
+  
+  .container_centros {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px; 
+    position: relative;
+    color: white;
+    background-color: #2d2d2d;
+    padding: 20px 10px;
+    text-decoration: none;
+    border-bottom: 1px solid #d7d2cb;
+    display: block;
+    font-family: "Bitter", serif;
+    font-weight: 700;
+    line-height: 1.25rem;
+    font-size: 1.125rem;
+  }
+  
+  .dropdown-content-centros a{
+    color: white;
+    background-color: #2d2d2d;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    line-height: 1.25rem;
+    font-size: 1.125rem;
+  }
+  
+  .dropdown-content-centros {
+    display: none;
+  }
+  
+  .downArrow {
+    position: absolute;
+    left:0px;
+    padding-right: 100%;
+    padding-left: 100px;
+    background-color: transparent;
+    fill: #00adda;
+    border-style: none;
+    cursor: pointer;
+  } 
+  
+  .top-search { 
+    width: 100%;
+    border: 0;
+    margin: 0;
+    color: white;
+    padding: 20px 0px 20px;
+    background-color: #2d2d2d;
+  }
+  
+  input {
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background-color: #474a4c;
+  }
+  
+  .search-form__field {
+    margin-left: 10px;
+    height: 30px;
+    width: 60%;
+    border: 0;
+    color: white;
+    background-color: #494949;
+    line-height: 1.25rem;
+  }
+  
+  .search-form-s {
+    border: 0;
+    margin: 0;
+    background-color: transparent;
+    padding: 0;
+    top: 0px;
+    right: 25px;
+    position: relative;
+  }
+  
+  .search-form-s svg {
+    fill: rgb(255, 255, 255);
+  }
+  
+  ::selection {
+    background: #00adda;
+    color: white;
+    text-shadow: none;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  

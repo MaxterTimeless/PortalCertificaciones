@@ -2,13 +2,18 @@ import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+
 
 function Example() {
     const [show, setShow] = useState(false);
   
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
-  
+    const [startDate, setStartDate] = useState(new Date());
+    const [startDate2, setStartDate2] = useState(new Date());
+
     return (
       <>
        <div className="d-grid gap-2">
@@ -54,10 +59,17 @@ function Example() {
                   autoFocus
                 />
               </Form.Group>
+
+              <Form.Label>Fecha Obtención</Form.Label>
+              <DatePicker selected={startDate} onChange={(date:Date) => setStartDate(date)} />
+              
+              <Form.Label>Vigencia</Form.Label>
+              <DatePicker selected={startDate2} onChange={(date:Date) => setStartDate2(date)} />
+
             </Form>
           </Modal.Body>
           <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose}>
+            <Button type="submit" variant="secondary" onClick={handleClose}>
               Close
             </Button>
             <Button variant="primary" onClick={handleClose}>

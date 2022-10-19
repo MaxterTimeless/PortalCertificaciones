@@ -6,12 +6,19 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Accordion from './Accordion';
 import New from './New';
+import Footer from './Footer';
+import './Footer.css';
+
+import Heather from './Heather';
+import './Heather.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Heather/>
+    
     <Accordion/>
     <New/>
+    <Footer/>
   </React.StrictMode>
 );
 

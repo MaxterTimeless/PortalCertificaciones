@@ -1,7 +1,7 @@
 import React, { Fragment } from "react"
-import './App.css';
+import './Heather.css';
 
-function BarraSup() {
+function heather() {
   const Menu = (dis) => {
       if(document.getElementById(dis).style.display == "block"){
         document.getElementById(dis).style.display = "none";
@@ -56,4 +56,4 @@ function BarraSup() {
   );
 }
 
-export default BarraSup;
+export default heather;

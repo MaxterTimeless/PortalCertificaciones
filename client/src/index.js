@@ -8,15 +8,14 @@ import Accordion from './Accordion';
 import New from './New';
 import Footer from './Footer';
 import './Footer.css';
-import Tarjetitas from './Tarjetitas';
+import Cursito from './Cursito';
 import Heather from './Heather';
 import './Heather.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Heather/>
-    <Tarjetitas/>
-    <Tarjetitas/>
+    <Cursito/>
     <Accordion/>
     <New/>
     <Footer/>

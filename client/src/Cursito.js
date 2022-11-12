@@ -9,6 +9,9 @@ import Modal from 'react-bootstrap/Modal';
 import 'bootstrap/dist/css/bootstrap.css';
 import Tabs from 'react-bootstrap/Tabs';
 import Tab from 'react-bootstrap/Tab';
+import DataFetching from './Datafetching';
+import Curso2 from './Curso2';
+
 
 function Cursito() {
     {/*curso uno*/}
@@ -44,7 +47,7 @@ function Cursito() {
                   <Card.Img variant="top" alt="170x180" width={160}
                       height={180} src="https://estadocuentas.uai.cl/Content/img/uai-logo.png" />
                   <Card.Body>
-                      <Card.Title>Curso 1</Card.Title>
+                      <Card.Title> <DataFetching/></Card.Title>
                       <Card.Text>
                           Resumen llamativo del curso para que hagan click en el boton.
                       </Card.Text>
@@ -56,7 +59,7 @@ function Cursito() {
                           </div>
                           <Modal show={show} onHide={handleClose}>
                               <Modal.Header closeButton>
-                                  <Modal.Title>Título curso 1</Modal.Title>
+                                  <Modal.Title><DataFetching/></Modal.Title>
                               </Modal.Header>
                               <Modal.Body>
                                   <Form>
@@ -66,11 +69,7 @@ function Cursito() {
                                               type="text"
                                               placeholder="Título"
                                               autoFocus />
-
-
                                       </Form.Group>
-
-
                                   </Form>
                               </Modal.Body>
                               <Modal.Footer>
@@ -118,7 +117,7 @@ function Cursito() {
                       <Card.Img variant="top" alt="170x180" width={160}
                           height={180} src="https://estadocuentas.uai.cl/Content/img/uai-logo.png" />
                       <Card.Body>
-                          <Card.Title>Curso 2</Card.Title>
+                          <Card.Title><Curso2/></Card.Title>
                           <Card.Text>
                               Resumen llamativo del curso para que hagan click en el boton.
                           </Card.Text>

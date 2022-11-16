@@ -9,8 +9,8 @@ import Modal from 'react-bootstrap/Modal';
 import 'bootstrap/dist/css/bootstrap.css';
 import Tabs from 'react-bootstrap/Tabs';
 import Tab from 'react-bootstrap/Tab';
-import DataFetching from './Datafetching';
-import Curso2 from './Curso2';
+import Curso from './Cursos'
+import { Curso2,Curso3,Curso4} from './Cursos';
 
 
 function Cursito() {
@@ -47,7 +47,7 @@ function Cursito() {
                   <Card.Img variant="top" alt="170x180" width={160}
                       height={180} src="https://estadocuentas.uai.cl/Content/img/uai-logo.png" />
                   <Card.Body>
-                      <Card.Title> <DataFetching/></Card.Title>
+                      <Card.Title> <Curso/></Card.Title>
                       <Card.Text>
                           Resumen llamativo del curso para que hagan click en el boton.
                       </Card.Text>
@@ -59,7 +59,7 @@ function Cursito() {
                           </div>
                           <Modal show={show} onHide={handleClose}>
                               <Modal.Header closeButton>
-                                  <Modal.Title><DataFetching/></Modal.Title>
+                                  <Modal.Title><Curso/></Modal.Title>
                               </Modal.Header>
                               <Modal.Body>
                                   <Form>
@@ -85,7 +85,7 @@ function Cursito() {
                   <Card.Img variant="top" alt="170x180" width={160}
                       height={180} src="https://estadocuentas.uai.cl/Content/img/uai-logo.png" />
                   <Card.Body>
-                      <Card.Title>Curso 3</Card.Title>
+                      <Card.Title><Curso3/></Card.Title>
                       <Card.Text>
                           Resumen llamativo del curso para que hagan click en el boton.
                       </Card.Text>
@@ -159,7 +159,7 @@ function Cursito() {
                       <Card.Img variant="top" alt="170x180" width={160}
                           height={180} src="https://estadocuentas.uai.cl/Content/img/uai-logo.png" />
                       <Card.Body>
-                          <Card.Title>Curso 4</Card.Title>
+                          <Card.Title><Curso4/></Card.Title>
                           <Card.Text>
                               Resumen llamativo del curso para que hagan click en el boton.
                           </Card.Text>

@@ -33,11 +33,17 @@ body {
 
   .top-bar a:hover {
     color:rgb(255, 255, 255);
+    
+      font-family: "Bitter", serif;
+      font-weight: 700;
+      
+    
   }
   .menu-bar{
-    background-color: rgb(0, 0, 0);
+    background-color: #1d1e20;
     padding: 20px 0px 20px 0px;
     width: 100%;
+    position: sticky;
   }
 
   .dropdown-content-1 a:hover{ 
@@ -214,4 +220,8 @@ body {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
   }
-  
+
+.nav-top a {
+  font-size: 200%;
+
+}

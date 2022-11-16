@@ -1,0 +1,72 @@
+.floorfade {
+    background: 
+      linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0),
+        rgba(28, 29, 31, 1)
+      ),
+      url(https://estadocuentas.uai.cl/Content/img/uai-logo.png);
+    width: 100%;
+    height: 340px;
+    position: relative;
+    overflow: hidden;
+    margin: '1%';
+    background-size: cover;
+    font-size: 0;
+    border-style: none;
+  }
+ 
+ .modal-header {
+  border-style: none;
+ } 
+
+ .modal-body {
+  border-style: none;
+ }
+.fadecurso {
+    position: relative;
+    bottom: -45%;
+    left: 0%;
+    width: 100%;
+    padding: 0px 0px; 
+    margin: 0%;
+    color: white;
+    text-shadow: 0 1px 0 black;
+    
+  }
+  
+  
+
+  .modal-body {
+    font-size: 100%;
+    line-height: 100%;
+    margin: 0%;
+    padding: 0;
+  }
+
+  .tabs {
+    font-size: 100%;
+    line-height: 150%;
+    margin: 1%;
+    padding: 1%;
+    background-color:white;
+    color: black;
+    
+  }
+
+  .tabsoscuras {
+    background-color:#1C1D1F;
+    color: white;
+    margin: 0%;
+    padding: 0%;
+     }
+
+     .taboscura {
+        
+        margin: 0%;
+        padding-left: 5%; 
+        padding-top:5%; 
+        padding-bottom: 5%;
+        padding-right: 5%;
+    }
+

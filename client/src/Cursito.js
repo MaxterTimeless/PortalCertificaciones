@@ -4,13 +4,13 @@ import Row from 'react-bootstrap/Row';
 import 'bootstrap/dist/css/bootstrap.css';
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
 import 'bootstrap/dist/css/bootstrap.css';
 import Tabs from 'react-bootstrap/Tabs';
 import Tab from 'react-bootstrap/Tab';
 import Curso from './Cursos'
 import { Curso2,Curso3,Curso4} from './Cursos';
+import './Cursito.css';
 
 
 function Cursito() {
@@ -58,25 +58,40 @@ function Cursito() {
                               </Button>
                           </div>
                           <Modal show={show} onHide={handleClose}>
-                              <Modal.Header closeButton>
-                                  <Modal.Title><Curso/></Modal.Title>
+                              <Modal.Header className='floorfade'>
+                                  <Modal.Title className='fadecurso'><Curso/></Modal.Title>
                               </Modal.Header>
                               <Modal.Body>
-                                  <Form>
-                                      <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                                          <Form.Label>Título</Form.Label>
-                                          <Form.Control
-                                              type="text"
-                                              placeholder="Título"
-                                              autoFocus />
-                                      </Form.Group>
-                                  </Form>
+                              <div className='tabsoscuras' >
+                            <div className='taboscura' >
+                            <p> El curso en una frase llamativa. 
+                        </p>
+                        <p>---------------------- (divisor) </p>
+                        <p>Empresa</p>
+                                                   <p>Fecha de inicio y final</p>
+                                                   <p>Idioma y
+                                                    Cupos</p>
+                          <p>no necesariamente en ese orden con íconos</p>
+                          </div>
+                          </div>
+    <div className='tabs' style={{ display: 'block', width: '95%' }}>
+      
+      <Tabs defaultActiveKey="first">
+        <Tab eventKey="first" title="Resumen">
+          Poner los objetivos de aprendizaje aquí. Algo como cute punteo no sé.
+        </Tab>
+        <Tab eventKey="second" title="Detalles">
+        Poner algo como el syllabus, pero no literal el pdf po, obvio. La idea es que salga más a fondo lo que aprenderan, 
+        contenido clase a clase si disponible, y cómo funcionaría el curso, evaluaciones, etc.
+        </Tab>
+        <Tab eventKey="third" title="Empresa">
+          Aquí información de la empresa. 
+        </Tab>
+      </Tabs>
+    </div>
+ 
                               </Modal.Body>
-                              <Modal.Footer>
-                                  <Button variant="primary" onClick={handleClose}>
-                                      Enviar
-                                  </Button>
-                              </Modal.Footer>
+                             
                           </Modal>
                       </>
                   </Card.Body>
@@ -96,11 +111,38 @@ function Cursito() {
                           </Button>
                       </div>
                       <Modal show={show2} onHide={handleClose2}>
-                          <Modal.Header closeButton>
-                              <Modal.Title>Título curso 3</Modal.Title>
+                          <Modal.Header className='floorfade'>
+                              <Modal.Title className='fadecurso'>Título curso 3</Modal.Title>
                           </Modal.Header>
                           <Modal.Body>
-                              h
+                          <div className='tabsoscuras' >
+                            <div className='taboscura' >
+                            <p> El curso en una frase llamativa. 
+                        </p>
+                        <p>---------------------- (divisor) </p>
+                        <p>Empresa</p>
+                                                   <p>Fecha de inicio y final</p>
+                                                   <p>Idioma y
+                                                    Cupos</p>
+                          <p>no necesariamente en ese orden con íconos</p>
+                          </div>
+                          </div>
+    <div className='tabs' style={{ display: 'block', width: '95%' }}>
+      
+      <Tabs defaultActiveKey="first">
+        <Tab eventKey="first" title="Resumen">
+          Poner los objetivos de aprendizaje aquí. Algo como cute punteo no sé.
+        </Tab>
+        <Tab eventKey="second" title="Detalles">
+        Poner algo como el syllabus, pero no literal el pdf po, obvio. La idea es que salga más a fondo lo que aprenderan, 
+        contenido clase a clase si disponible, y cómo funcionaría el curso, evaluaciones, etc.
+        </Tab>
+        <Tab eventKey="third" title="Empresa">
+          Aquí información de la empresa. 
+        </Tab>
+      </Tabs>
+    </div>
+ 
                           </Modal.Body>
                           <Modal.Footer>
                               <Button variant="primary" onClick={handleClose2}>
@@ -128,29 +170,40 @@ function Cursito() {
                               </Button>
                           </div>
                           <Modal show={show3} onHide={handleClose3}>
-                              <Modal.Header closeButton>
-                                  <Modal.Title>Título curso 2</Modal.Title>
+                              <Modal.Header className='floorfade'>
+                                  <Modal.Title className='fadecurso'>Título curso 2</Modal.Title>
                               </Modal.Header>
                               <Modal.Body>
-                                  <Form>
-                                      <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                                          <Form.Label>Título</Form.Label>
-                                          <Form.Control
-                                              type="text"
-                                              placeholder="Título"
-                                              autoFocus />
-
-
-                                      </Form.Group>
-
-
-                                  </Form>
+                              <div className='tabsoscuras' >
+                            <div className='taboscura' >
+                            <p> El curso en una frase llamativa. 
+                        </p>
+                        <p>---------------------- (divisor) </p>
+                        <p>Empresa</p>
+                                                   <p>Fecha de inicio y final</p>
+                                                   <p>Idioma y
+                                                    Cupos</p>
+                          <p>no necesariamente en ese orden con íconos</p>
+                          </div>
+                          </div>
+    <div className='tabs' style={{ display: 'block', width: '95%' }}>
+      
+      <Tabs defaultActiveKey="first">
+        <Tab eventKey="first" title="Resumen">
+          Poner los objetivos de aprendizaje aquí. Algo como cute punteo no sé.
+        </Tab>
+        <Tab eventKey="second" title="Detalles">
+        Poner algo como el syllabus, pero no literal el pdf po, obvio. La idea es que salga más a fondo lo que aprenderan, 
+        contenido clase a clase si disponible, y cómo funcionaría el curso, evaluaciones, etc.
+        </Tab>
+        <Tab eventKey="third" title="Empresa">
+          Aquí información de la empresa. 
+        </Tab>
+      </Tabs>
+    </div>
+ 
                               </Modal.Body>
-                              <Modal.Footer>
-                                  <Button variant="primary" onClick={handleClose3}>
-                                      Enviar
-                                  </Button>
-                              </Modal.Footer>
+                              
                           </Modal>
                       </>
                       </Card.Body>
@@ -159,7 +212,7 @@ function Cursito() {
                       <Card.Img variant="top" alt="170x180" width={160}
                           height={180} src="https://estadocuentas.uai.cl/Content/img/uai-logo.png" />
                       <Card.Body>
-                          <Card.Title><Curso4/></Card.Title>
+                          <Card.Title ><Curso4/></Card.Title>
                           <Card.Text>
                               Resumen llamativo del curso para que hagan click en el boton.
                           </Card.Text>
@@ -170,33 +223,43 @@ function Cursito() {
                               </Button>
                           </div>
                           <Modal show={show4} onHide={handleClose4}>
-                              <Modal.Header closeButton>
-                                  <Modal.Title>Título curso 4</Modal.Title>
+                              <Modal.Header className='floorfade'>
+                                  <Modal.Title className='fadecurso'>Título curso 4</Modal.Title>
                               </Modal.Header>
                               <Modal.Body>
                               
 
-    <div style={{ display: 'block', width: 500, padding: 30 }}>
+                              <div className='tabsoscuras' >
+                            <div className='taboscura' >
+                            <p> El curso en una frase llamativa. 
+                        </p>
+                        <p>---------------------- (divisor) </p>
+                        <p>Empresa</p>
+                                                   <p>Fecha de inicio y final</p>
+                                                   <p>Idioma y
+                                                    Cupos</p>
+                          <p>no necesariamente en ese orden con íconos</p>
+                          </div>
+                          </div>
+    <div className='tabs' style={{ display: 'block', width: '95%' }}>
       
-      <Tabs defaultActiveKey="second">
+      <Tabs defaultActiveKey="first">
         <Tab eventKey="first" title="Resumen">
-          Hii, I am 1st tab content
+          Poner los objetivos de aprendizaje aquí. Algo como cute punteo no sé.
         </Tab>
         <Tab eventKey="second" title="Detalles">
-          Hii, I am 2nd tab content
+        Poner algo como el syllabus, pero no literal el pdf po, obvio. La idea es que salga más a fondo lo que aprenderan, 
+        contenido clase a clase si disponible, y cómo funcionaría el curso, evaluaciones, etc.
         </Tab>
         <Tab eventKey="third" title="Empresa">
-          Hii, I am 3rd tab content
+          Aquí información de la empresa. 
         </Tab>
       </Tabs>
     </div>
  
+ 
                               </Modal.Body>
-                              <Modal.Footer>
-                                  <Button variant="primary" onClick={handleClose4}>
-                                      Enviar
-                                  </Button>
-                              </Modal.Footer>
+                            
                           </Modal>
                       </>
                       </Card.Body>

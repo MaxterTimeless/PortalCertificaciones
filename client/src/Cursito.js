@@ -9,7 +9,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import Tabs from 'react-bootstrap/Tabs';
 import Tab from 'react-bootstrap/Tab';
 import Curso from './Cursos'
-import { Curso2,Curso3,Curso4} from './Cursos';
+import { Curso2,Curso3,Curso4,Duracion4,Duracion1,Duracion2,Duracion3,Empresa1,Empresa2,Empresa3,Empresa4,Idioma} from './Cursos';
 import './Cursito.css';
 
 
@@ -66,19 +66,19 @@ function Cursito() {
                             <div className='taboscura' >
                             <p> El curso en una frase llamativa. 
                         </p>
-                        <p>---------------------- (divisor) </p>
-                        <p>Empresa</p>
-                                                   <p>Fecha de inicio y final</p>
-                                                   <p>Idioma y
-                                                    Cupos</p>
-                          <p>no necesariamente en ese orden con íconos</p>
+                        <p>----------------------  </p>
+                        <p><Empresa1/></p>
+                                                   <p><Duracion1/></p>
+                                                   <p><Idioma/> 
+                                                    </p>
+                          <p>(con íconos)</p>
                           </div>
                           </div>
     <div className='tabs' style={{ display: 'block', width: '95%' }}>
       
       <Tabs defaultActiveKey="first">
         <Tab eventKey="first" title="Resumen">
-          Poner los objetivos de aprendizaje aquí. Algo como cute punteo no sé.
+          Poner los objetivos de aprendizaje aquí. Algo como punteo.
         </Tab>
         <Tab eventKey="second" title="Detalles">
         Poner algo como el syllabus, pero no literal el pdf po, obvio. La idea es que salga más a fondo lo que aprenderan, 
@@ -112,7 +112,7 @@ function Cursito() {
                       </div>
                       <Modal show={show2} onHide={handleClose2}>
                           <Modal.Header className='floorfade'>
-                              <Modal.Title className='fadecurso'>Título curso 3</Modal.Title>
+                              <Modal.Title className='fadecurso'><Curso3/></Modal.Title>
                           </Modal.Header>
                           <Modal.Body>
                           <div className='tabsoscuras' >
@@ -120,10 +120,10 @@ function Cursito() {
                             <p> El curso en una frase llamativa. 
                         </p>
                         <p>---------------------- (divisor) </p>
-                        <p>Empresa</p>
-                                                   <p>Fecha de inicio y final</p>
-                                                   <p>Idioma y
-                                                    Cupos</p>
+                        <p><Empresa3/></p>
+                                                   <p><Duracion3/></p>
+                                                   <p><Idioma/> 
+                                                    </p>
                           <p>no necesariamente en ese orden con íconos</p>
                           </div>
                           </div>
@@ -171,7 +171,7 @@ function Cursito() {
                           </div>
                           <Modal show={show3} onHide={handleClose3}>
                               <Modal.Header className='floorfade'>
-                                  <Modal.Title className='fadecurso'>Título curso 2</Modal.Title>
+                                  <Modal.Title className='fadecurso'><Curso2/></Modal.Title>
                               </Modal.Header>
                               <Modal.Body>
                               <div className='tabsoscuras' >
@@ -179,10 +179,10 @@ function Cursito() {
                             <p> El curso en una frase llamativa. 
                         </p>
                         <p>---------------------- (divisor) </p>
-                        <p>Empresa</p>
-                                                   <p>Fecha de inicio y final</p>
-                                                   <p>Idioma y
-                                                    Cupos</p>
+                        <p><Empresa2/></p>
+                                                   <p><Duracion2/></p>
+                                                   <p><Idioma/> 
+                                                   </p>
                           <p>no necesariamente en ese orden con íconos</p>
                           </div>
                           </div>
@@ -224,7 +224,7 @@ function Cursito() {
                           </div>
                           <Modal show={show4} onHide={handleClose4}>
                               <Modal.Header className='floorfade'>
-                                  <Modal.Title className='fadecurso'>Título curso 4</Modal.Title>
+                                  <Modal.Title className='fadecurso'><Curso4/></Modal.Title>
                               </Modal.Header>
                               <Modal.Body>
                               
@@ -234,10 +234,10 @@ function Cursito() {
                             <p> El curso en una frase llamativa. 
                         </p>
                         <p>---------------------- (divisor) </p>
-                        <p>Empresa</p>
-                                                   <p>Fecha de inicio y final</p>
-                                                   <p>Idioma y
-                                                    Cupos</p>
+                        <p><Empresa4/></p>
+                                                   <p><Duracion4/></p>
+                                                   <p><Idioma/> 
+                                                    </p>
                           <p>no necesariamente en ese orden con íconos</p>
                           </div>
                           </div>

@@ -37,3 +37,58 @@ app.get('/cursos/:id_curso', (req, res)=>{
     });
     client.end;
 })
+
+app.get('/empresas_cert', (req, res)=>{
+    client.query(`Select * from empresas_cert`, (err, result)=>{
+        if(!err){
+            res.send(result.rows);
+        }
+    });
+    client.end;
+})
+app.get('/empresas_cert/:id_empresa', (req, res)=>{
+    client.query(`Select * from empresas_cert where id_empresa=${req.params.id_empresa}`, (err, result)=>{
+        if(!err){
+            res.send(result.rows);
+        }
+    });
+    client.end;
+})
+
+
+
+
+app.get('/certificaciones', (req, res)=>{
+    client.query(`Select * from certificaciones`, (err, result)=>{
+        if(!err){
+            res.send(result.rows);
+        }
+    });
+    client.end;
+})
+app.get('/certificaciones/:id_cert', (req, res)=>{
+    client.query(`Select * from certificaciones where id_cert=${req.params.id_cert}`, (err, result)=>{
+        if(!err){
+            res.send(result.rows);
+        }
+    });
+    client.end;
+})
+
+
+app.get('/areas', (req, res)=>{
+    client.query(`Select * from areas`, (err, result)=>{
+        if(!err){
+            res.send(result.rows);
+        }
+    });
+    client.end;
+})
+app.get('/areas/:id_area', (req, res)=>{
+    client.query(`Select * from areas where id_area=${req.params.id_area}`, (err, result)=>{
+        if(!err){
+            res.send(result.rows);
+        }
+    });
+    client.end;
+})
